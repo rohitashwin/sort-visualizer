@@ -1,0 +1,43 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    color: #3b4252;
+}
+
+.top-bar {
+    width: 800px;
+    margin: 0 calc(50% - 400px);
+}
+
+.top-bar h1 {
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.top-bar nav { 
+    display: flex;
+}
+
+.top-bar a {
+    height: 2em;
+    width: 100%;
+    padding-top: 12px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #4c566a;
+    text-decoration: none;
+    color: white;
+}
+
+.top-bar a:hover {
+    background-color: #3b4252;
+}
+
+.top-bar a:active {
+    color: #a3be8c;
+}
+
+.page-info {
+    font-size: large;
+    width: 800px;
+    margin: 30px calc(50% - 400px);
+}
