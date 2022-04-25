@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/sorter/style.css">
+</head>
+<body>
+    <header><h1>Sort Visualizer</h1></header>
+    <p>This website demonstrates various sorting algorithms using javascript. Use the buttons for controlling the sort parameters.</p>
+    <button class="button" id="start-button">Start</button>
+    <button class="button" id="randomize">New Random</button>
+    <button class="button" id="shuffle">Shuffle</button>
+    <div class="dropdown">
+        <button onclick="expand_sort_selection()" class="dropbtn button">Bubble Sort</button>
+        <div id="sort-dropdown" class="dropdown-content">
+            <button class="button sort-choice-button" name="bubble-sort" value="bubble-sort">Bubble Sort</button>
+            <button class="button sort-choice-button" name="insertion-sort" value="insertion-sort">Insertion Sort</button>
+            <button class="button sort-choice-button" name="merge-sort" value="merge-sort">Merge Sort</button>
+            <button class="button sort-choice-button" name="merge-sort-async" value="merge-sort-async">Merge Sort (Async)</button>
+            <button class="button sort-choice-button" name="quicksort" value="quicksort">Quicksort</button>
+            <button class="button sort-choice-button" name="quicksort-async" value="quicksort-async">Quicksort (Async)</button>
+            <button class="button sort-choice-button" name="heap-sort" value="heap-sort">Heap Sort</button>
+            <button class="button sort-choice-button" name="counting-sort" value="counting-sort">Counting Sort</button>
+        </div> 
+    </div>
+    <button class="button" id="display-mode-switch">Normal</button>
+    <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ/', '_blank')" class="button" id="num-comparisons">Comparisons: 0</button>
+    <div id="sort-window">
+    </div>
+    <script src="/sorter/sort.js"></script>
+</body>
+</html>

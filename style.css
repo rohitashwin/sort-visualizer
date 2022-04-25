@@ -3,9 +3,8 @@ html {
     color: #3b4252;
 }
 
-a {
-    text-decoration: none;
-    color: #3b4252;
+body {
+    margin-bottom: 250px;
 }
 
 .top-bar {
@@ -25,6 +24,15 @@ a {
 #logo h1 {
     padding: 0;
     margin: 0;
+}
+
+#logo a {
+    color: #3b4252;
+    transition: color .2s ease;
+}
+
+#logo a:hover{
+    color: #a3be8c;
 }
 
 .top-bar h1 {
@@ -69,6 +77,7 @@ a {
     align-items: center;
     padding: 10px 20px;
     border: 1px solid #4c566a;
+    color: #3b4252;
     border-radius: 3px;
 }
 
@@ -81,4 +90,19 @@ a {
     font-size: 105%;
     width: 600px;
     margin: 30px calc(50% - 300px);
+}
+
+#rick-roll {
+    color: #81a1c1;
+}
+
+a {
+    text-decoration: none;
+    color: #3b4252;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #3b4252;
+    border-radius: 5px;
 }
