@@ -45,7 +45,7 @@ body {
 .top-bar nav { 
     display: flex;
     border: 3px solid #4c566a;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .top-bar nav a {
