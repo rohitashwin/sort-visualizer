@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-    <title>Ashwin Rohit Alagiri Rajan</title>
+    <link rel="stylesheet" href="/sorter/style.css">
 </head>
 <body>
-<!--     localhost:5500 -->
-<!-- <div style="display:none;"> -->
-    <div class="top-bar">
-        <header>
-            <div id="logo"><h1><a href="/index.html">அ</a></h1></div>
-            <h1>Ashwin Rohit Alagiri Rajan</h1>
-        </header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="/projects.html">Projects</a>
-            <a href="/contacts.html">Contact</a>
-        </nav>
+    <header><h1>Sort Visualizer</h1></header>
+    <p>This website demonstrates various sorting algorithms using javascript. Use the buttons for controlling the sort parameters.</p>
+    <button class="button" id="start-button">Start</button>
+    <button class="button" id="randomize">New Random</button>
+    <button class="button" id="shuffle">Shuffle</button>
+    <div class="dropdown">
+        <button onclick="expand_sort_selection()" class="dropbtn button">Bubble Sort</button>
+        <div id="sort-dropdown" class="dropdown-content">
+            <button class="button sort-choice-button" name="bubble-sort" value="bubble-sort">Bubble Sort</button>
+            <button class="button sort-choice-button" name="insertion-sort" value="insertion-sort">Insertion Sort</button>
+            <button class="button sort-choice-button" name="merge-sort" value="merge-sort">Merge Sort</button>
+            <button class="button sort-choice-button" name="merge-sort-async" value="merge-sort-async">Merge Sort (Async)</button>
+            <button class="button sort-choice-button" name="quicksort" value="quicksort">Quicksort</button>
+            <button class="button sort-choice-button" name="quicksort-async" value="quicksort-async">Quicksort (Async)</button>
+            <button class="button sort-choice-button" name="heap-sort" value="heap-sort">Heap Sort</button>
+            <button class="button sort-choice-button" name="counting-sort" value="counting-sort">Counting Sort</button>
+        </div> 
     </div>
-    <div class="page-info">
-
-        <h3 class="info-header">About Me 👋</h3>
-        <p>Hello, I'm Ashwin, I like programming, watching movies, and eating good South Indian food.</p>
-        <p>To know more about me check out my resume.</p>
-        <div class="button-holder"><a href="/Ashwin Rohit Alagiri Rajan (CV).pdf" target="_blank">Resume PDF</a></div>
-        
-        <h3 class="info-header">What I'm working on</h3>
-        <p>I've always liked systems programming with C++. Now I'm  trying out other stuff like web development and app developement in iOS.</p>
-        <p>Initially I started out with porting a raycaster I wrote in C++ to HTML using canvas, then I tried out a few other things (check out <a href="/projects.html" style="color: #81a1c1;">Projects</a>).</p>
-
-        <h3 class="info-header">Some things I like</h3>
-        <ul>
-            <li>Color Theme : Nord (Used in this website)</li>
-            <li>IDE : Jetbrains IDEs (Clion, Intellij)</li>
-            <li>Monospaced Font : Jetbrains Mono</li>
-<!--             <li>Social Media : Reddit</li> -->
-<!--             <li>Food : Biriyani</li> -->
-        </ul>
-        <hr>
+    <button class="button" id="display-mode-switch">Normal</button>
+    <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ/', '_blank')" class="button" id="num-comparisons">Comparisons: 0</button>
+    <div id="sort-window">
     </div>
-<!-- </div> -->
+    <script src="/sorter/sort.js"></script>
 </body>
 </html>
